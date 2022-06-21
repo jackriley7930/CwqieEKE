@@ -18,7 +18,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Docs - https://github.com/mathieudutour/github-tag-action
       # Workflows cannot trigger other workflows implicitly
       # - https://github.community/t/github-actions-workflow-not-triggering-with-tag-push/17053/7
       - name: Bump Version and Push Tag
