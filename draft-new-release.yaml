@@ -15,7 +15,6 @@ on:
 
 jobs:
   cut-release:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
@@ -27,7 +26,6 @@ jobs:
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.0
         with:
-          github_token: ${{ secrets.BOT_PAT }}
           tag_prefix: v
           default_bump: ${{ github.event.inputs.bump }}
 
